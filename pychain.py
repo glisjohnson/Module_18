@@ -48,6 +48,8 @@ import hashlib
 # @TODO
 # Create a Record Data Class that consists of the `sender`, `receiver`, and
 # `amount` attributes
+
+#Adding new class: 'Record'
 @dataclass
 class Record:
     sender: str
@@ -71,6 +73,7 @@ class Block:
 
     # @TODO
     # Rename the `data` attribute to `record`, and set the data type to `Record`
+    #Simply following the instructions:
     record: Record
 
     creator_id: int
@@ -169,6 +172,7 @@ pychain = setup()
 
 # @TODO:
 # Delete the `input_data` variable from the Streamlit interface.
+#In the following lines, I deleted the input_data variable and then created new variables for the new inputs
 st.text_input("Block Data")
 
 # @TODO:
